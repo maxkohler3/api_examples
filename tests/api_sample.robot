@@ -27,3 +27,8 @@ Open Library: Get a book based on ISBN 10 (GET)
     Should Be Equal As Strings                              ${title}                    ${EXPECTED_TITLE}
     Should Be Equal As Strings                              ${published}                ${EXPECTED_YEAR}
     Should Be Equal As Strings                              ${main_author_name}         ${EXPECTED_AUTHOR}
+
+
+Test Case Expected Failure
+    GoTo    https://fox.com
+    ClickText    abcdefg
